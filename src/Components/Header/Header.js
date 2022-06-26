@@ -9,13 +9,13 @@ const Header = () => {
           <div class=" flex flex-wrap justify-between">
             <div>
               <p
-                className=" h-[40px] w-[40px] leading-[34px] text-[24px] font-semi-bold text-skin-color border-2 border-skin-color rounded-full text-center"
+                className=" h-[40px] w-[40px] leading-[36px] text-[24px] font-semi-bold text-skin-color border-2 border-skin-color rounded-full text-center"
                 href="#"
               >
                 M
               </p>
             </div>
-            <div class="hamburger_btn shadow-outer hover:shadow-inner transition duration-150 ease-in-out">
+            <div class="hamburger_btn shadow-outer hover:shadow-inner transition duration-150 ease-in-out mr-4">
               <span className=" bg-skin-color"></span>
             </div>
           </div>
