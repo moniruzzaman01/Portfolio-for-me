@@ -1,0 +1,35 @@
+.hamburger_btn {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.hamburger_btn:after {
+  border-radius: 50%;
+}
+.hamburger_btn span {
+  display: block;
+  height: 2px;
+  width: 18px;
+  background-color: #1fc586; /*skin color*/
+  position: relative;
+}
+.hamburger_btn span:before,
+.hamburger_btn span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1fc586; /*skin color*/
+}
+.hamburger_btn span:before {
+  top: -6px;
+}
+.hamburger_btn span:after {
+  top: 6px;
+}
