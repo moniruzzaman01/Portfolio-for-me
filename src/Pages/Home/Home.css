@@ -1,25 +1,126 @@
-.home_section {
-  position: relative;
-}
-.home_section .full_screen {
+.full_screen {
   padding: 50px 0;
   min-height: 100vh;
 }
-.home_section .home_text,
-.home_section .home_img {
+.home_text,
+.home_img {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 0 15px;
 }
-.home_section .home_img .img_box {
+.home_img .img_box {
   max-width: 450px;
   display: block;
   margin: auto;
   border-radius: 50%;
   padding: 15px;
 }
-.home_section .home_img .img_box img {
+.home_img .img_box img {
   width: 100%;
   border-radius: 50%;
   border: 10px solid transparent;
+}
+
+.effect_wrap .effect {
+  position: absolute;
+  z-index: 0;
+}
+.effect_1 {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #8a49ff;
+  right: 10%;
+  bottom: 10%;
+  animation: spin 10s linear infinite;
+}
+.effect_2 {
+  left: 3%;
+  bottom: 20%;
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.effect_2 div {
+  height: 3px;
+  width: 3px;
+  background-color: #ff9c07;
+  margin: 0 3px 8px;
+  animation: topbounce 3s ease-in-out infinite;
+}
+.effect_3 {
+  height: 180px;
+  width: 180px;
+  border: 25px solid #1fc586;
+  border-radius: 50%;
+  left: 50%;
+  top: -120px;
+  animation: leftbounce 3s ease-in-out infinite;
+}
+.effect_4 {
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06d79c;
+  left: 30%;
+  top: 20%;
+  animation: spin 15s linear infinite;
+}
+.effect_4:before {
+  content: "";
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06d79c;
+  position: absolute;
+  opacity: 0.5;
+  left: -35px;
+  top: -25px;
+}
+.effect_5 {
+  height: 50px;
+  width: 50px;
+  right: 10%;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: spin 10s linear infinite;
+}
+.effect_5 div {
+  width: 1px;
+  background-color: #4dd0e1;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes topbounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+@keyframes leftbounce {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+}
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

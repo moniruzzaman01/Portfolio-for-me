@@ -4,8 +4,56 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <section class="home_section section active" id="home">
-      {/* effect */}
+    <section class=" relative">
+      {/* <!-- effect wrap start --> */}
+      <div class="effect_wrap">
+        <div class="effect effect_1"></div>
+        <div class="effect effect_2">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="effect effect_3"></div>
+        <div class="effect effect_4"></div>
+        <div class="effect effect_5">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      {/* <!-- effect wrap end --> */}
       <div class=" max-w-6xl m-auto">
         <div class=" flex flex-wrap min-h-screen py-[50px] items-center">
           <div class=" flex-1 px-[15px]">
@@ -14,14 +62,14 @@ const Home = () => {
               I'm Moniruzzaman
             </h1>
             <h2 className=" text-[20px] font-medium text-black-600 m-0 capitalize ">
-              web designer and deeveloper
+              full stack developer || backend specialist
             </h2>
-            <a
+            <p
               href="#about"
-              className=" px-[25px] py-[10px] font-semibold text-skin-color bg-transparent cursor-pointer rounded-full inline-block shadow-outer mt-8 hover:shadow-inner "
+              className=" relative px-[25px] py-[10px] font-semibold text-skin-color bg-transparent cursor-pointer rounded-full inline-block shadow-outer mt-8 hover:shadow-inner transition-all "
             >
               More About Me
-            </a>
+            </p>
           </div>
           <div class="home_img">
             <div class="img_box shadow-inner">
