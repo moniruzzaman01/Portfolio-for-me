@@ -66,7 +66,7 @@ const Home = () => {
             </h2>
             <p
               href="#about"
-              className=" relative px-[25px] py-[10px] font-semibold text-skin-color bg-transparent cursor-pointer rounded-full inline-block shadow-outer mt-8 hover:shadow-inner transition-all "
+              className=" relative px-[25px] py-[10px] font-semibold text-skin-color bg-transparent cursor-pointer rounded-full inline-block shadow-outer mt-8 hover:shadow-inner "
             >
               More About Me
             </p>

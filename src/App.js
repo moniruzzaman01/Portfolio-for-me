@@ -1,12 +1,17 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header/Header";
+import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
 
 function App() {
   return (
     <div className=" bg-black-50 ">
       <Header />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+      </Routes>
     </div>
   );
 }

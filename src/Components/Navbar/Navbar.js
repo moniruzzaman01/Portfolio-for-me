@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ navbar, setNavbar }) => {
   return (
@@ -14,46 +15,50 @@ const Navbar = ({ navbar, setNavbar }) => {
         &times;
       </div>
       <div class=" flex justify-center items-center min-h-screen">
-        <ul className=" p-[15px] text-center ">
+        <ul
+          onClick={() => setNavbar(!navbar)}
+          className=" p-[15px] text-center "
+        >
           <li className=" mb-5 block">
-            <a
+            <Link
+              to="/"
               href="#home"
               class=" text-[28px] inline-block font-semibold px-[30px] py-[5px] capitalize rounded-full text-black-600 shadow-inner hover:shadow-outer"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li className=" mb-5">
-            <a
-              href="#home"
+            <Link
+              to="/about"
               class=" text-[28px] inline-block font-semibold px-[30px] py-[5px] capitalize rounded-full text-black-600 shadow-inner hover:shadow-outer"
             >
               about
-            </a>
+            </Link>
           </li>
           <li className=" mb-5">
-            <a
-              href="#home"
+            <Link
+              to="/services"
               class=" text-[28px] inline-block font-semibold px-[30px] py-[5px] capitalize rounded-full text-black-600 shadow-inner hover:shadow-outer"
             >
               services
-            </a>
+            </Link>
           </li>
           <li className=" mb-5">
-            <a
-              href="#home"
+            <Link
+              to="/portfolio"
               class=" text-[28px] inline-block font-semibold px-[30px] py-[5px] capitalize rounded-full text-black-600 shadow-inner hover:shadow-outer"
             >
               portfolio
-            </a>
+            </Link>
           </li>
           <li className=" mb-5">
-            <a
-              href="#home"
+            <Link
+              to="/contact"
               class=" text-[28px] inline-block font-semibold px-[30px] py-[5px] capitalize rounded-full text-black-600 shadow-inner hover:shadow-outer"
             >
               contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
