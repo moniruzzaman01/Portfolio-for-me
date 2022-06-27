@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../assets/img.png";
+import { FaFacebookF, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -23,20 +24,20 @@ const About = () => {
               />
             </div>
             {/* <!-- social links start --> */}
-            {/* <div class="social_links">
-              <p href="#" class="outer_shadow hover_in_shadow">
-                <i class="fab fa-facebook-f"></i>
+            <div class=" mt-[20px] text-center ">
+              <p class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 hover:shadow-inner hover:text-skin-color">
+                <FaFacebookF className=" mx-auto h-full " />
               </p>
-              <p href="#" class="outer_shadow hover_in_shadow">
-                <i class="fab fa-twitter"></i>
+              <p class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 hover:shadow-inner hover:text-skin-color">
+                <FaTwitter className=" mx-auto h-full " />
               </p>
-              <p href="#" class="outer_shadow hover_in_shadow">
-                <i class="fab fa-instagram"></i>
+              <p class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 hover:shadow-inner hover:text-skin-color">
+                <FaWhatsapp className=" mx-auto h-full " />
               </p>
-              <p href="#" class="outer_shadow hover_in_shadow">
-                <i class="fab fa-linkedin-in"></i>
+              <p class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 hover:shadow-inner hover:text-skin-color">
+                <FaLinkedin className=" mx-auto h-full " />
               </p>
-            </div> */}
+            </div>
             {/* <!-- social links end --> */}
           </div>
           <div class=" max-w-[60%] px-[15px] ">
