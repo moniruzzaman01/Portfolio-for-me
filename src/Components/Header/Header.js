@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Navbar from "../Navbar/Navbar";
 import "./Header.css";
 
 const Header = () => {
+  const [navbar, setNavbar] = useState(false);
   return (
     <div>
+      <Navbar navbar={navbar} setNavbar={setNavbar} />
       <header class=" px-3 py-5 w-screen absolute top-0 left-0 z-30">
         <div className=" max-w-6xl mx-auto">
           <div class=" flex flex-wrap justify-between">
@@ -15,7 +18,10 @@ const Header = () => {
                 M
               </p>
             </div>
-            <div class="hamburger_btn shadow-outer hover:shadow-inner transition duration-150 ease-in-out mr-4">
+            <div
+              onClick={() => setNavbar(!navbar)}
+              class="hamburger_btn shadow-outer hover:shadow-inner"
+            >
               <span className=" bg-skin-color"></span>
             </div>
           </div>
