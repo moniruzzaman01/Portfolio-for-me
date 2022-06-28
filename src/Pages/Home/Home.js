@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import img from "../../assets/img.png";
 import "./Home.css";
 
@@ -64,12 +65,12 @@ const Home = () => {
             <h2 className=" text-[20px] font-medium text-black-600 m-0 capitalize ">
               full stack developer || backend specialist
             </h2>
-            <p
-              href="#about"
+            <Link
+              to="/about"
               className=" relative px-[25px] py-[10px] font-semibold text-skin-color bg-transparent cursor-pointer rounded-full inline-block shadow-outer mt-8 hover:shadow-inner "
             >
               More About Me
-            </p>
+            </Link>
           </div>
           <div class="home_img">
             <div class="img_box shadow-inner">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -11,12 +12,13 @@ const Header = () => {
         <div className=" max-w-6xl mx-auto">
           <div class=" flex flex-wrap justify-between">
             <div>
-              <p
-                className=" h-[40px] w-[40px] leading-[36px] text-[24px] font-semi-bold text-skin-color border-2 border-skin-color rounded-full text-center"
+              <Link
+                to="/"
+                className=" block h-[40px] w-[40px] leading-[36px] text-[24px] font-semi-bold text-skin-color border-2 border-skin-color rounded-full text-center"
                 href="#"
               >
                 M
-              </p>
+              </Link>
             </div>
             <div
               onClick={() => setNavbar(!navbar)}

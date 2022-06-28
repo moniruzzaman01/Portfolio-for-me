@@ -63,8 +63,9 @@ const Navbar = ({ navbar, setNavbar }) => {
         </ul>
       </div>
       {/* <!-- copyright text --> */}
-      <p class=" absolute left-0 top-1/2 text-black-600 rotate-[-90deg] translate-x-[-40%]">
-        &copy; 2022 <span className=" text-skin-color">Moniruzzaman</span>
+      <p class=" absolute left-0 top-1/2 text-black-600 rotate-[-90deg] translate-x-[-40%] capitalize">
+        &copy; 2022 <span className=" text-skin-color">Moniruzzaman</span> (
+        design webshala )
       </p>
     </nav>
   );

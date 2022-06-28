@@ -25,18 +25,38 @@ const About = () => {
             </div>
             {/* <!-- social links start --> */}
             <div class=" mt-[20px] text-center ">
-              <p class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 hover:shadow-inner hover:text-skin-color">
+              <a
+                href="https://www.facebook.com/moniruzzaman.shakib.4/"
+                target="_blank"
+                rel="noreferrer"
+                class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 cursor-pointer hover:shadow-inner hover:text-skin-color"
+              >
                 <FaFacebookF className=" mx-auto h-full " />
-              </p>
-              <p class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 hover:shadow-inner hover:text-skin-color">
+              </a>
+              <p
+                href=""
+                target="_blank"
+                rel="noreferrer"
+                class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 cursor-pointer hover:shadow-inner hover:text-skin-color"
+              >
                 <FaTwitter className=" mx-auto h-full " />
               </p>
-              <p class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 hover:shadow-inner hover:text-skin-color">
+              <a
+                href="https://wa.link/lklwv3"
+                target="_blank"
+                rel="noreferrer"
+                class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 cursor-pointer hover:shadow-inner hover:text-skin-color"
+              >
                 <FaWhatsapp className=" mx-auto h-full " />
-              </p>
-              <p class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 hover:shadow-inner hover:text-skin-color">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/moniruzzaman-shakib-533931200/"
+                target="_blank"
+                rel="noreferrer"
+                class=" inline-block h-[40px] w-[40px] text-black-600 rounded-full shadow-outer text-[16px] text-center mr-3 cursor-pointer hover:shadow-inner hover:text-skin-color"
+              >
                 <FaLinkedin className=" mx-auto h-full " />
-              </p>
+              </a>
             </div>
             {/* <!-- social links end --> */}
           </div>
@@ -49,17 +69,47 @@ const About = () => {
               Express.js and MongoDB. I also have knowledge about Bootstrap and
               Tailwind. Personally I like backend development using node.js.
             </p>
-            <p>
-              odit quo alias possimus ut praesentium magnam labore a amet natus!
-            </p>
-            <p class=" px-[25px] py-[10px] mr-5 font-semibold text-skin-color bg-transparent cursor-pointer rounded-full inline-block shadow-outer mt-8 hover:shadow-inner ">
-              Download CV
-            </p>
+            <p>Searching for a job or an internship.</p>
+            <a
+              href="https://drive.google.com/file/d/1FDk4LBj0u9QtA-1zURRVWY5DAYgOVEvw/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              class=" px-[25px] py-[10px] mr-5 font-semibold text-skin-color bg-transparent cursor-pointer rounded-full inline-block shadow-outer mt-8 hover:shadow-inner "
+            >
+              Download Resume
+            </a>
             <p class=" px-[25px] py-[10px]  font-semibold text-skin-color bg-transparent cursor-pointer rounded-full inline-block shadow-outer mt-8 hover:shadow-inner ">
               Hire Me
             </p>
           </div>
         </div>
+        {/* <!-- about tabs start --> */}
+        <div class=" flex flex-wrap">
+          <div class=" py-[50px] px-[15px] max-w-[100%] mx-auto ">
+            <span
+              class={`tab_item inline-block py-[5px] px-[10px] rounded-full mx-2 cursor-pointer capitalize font-medium ${
+                true ? "text-skin-color shadow-outer" : "text-black-600"
+              }`}
+            >
+              skills
+            </span>
+            <span
+              class={`tab_item inline-block py-[5px] px-[10px] rounded-full mx-2 cursor-pointer capitalize font-medium ${
+                false ? "text-skin-color shadow-outer" : "text-black-600"
+              }`}
+            >
+              experience
+            </span>
+            <span
+              class={`tab_item inline-block py-[5px] px-[10px] rounded-full mx-2 cursor-pointer capitalize font-medium ${
+                false ? "text-skin-color shadow-outer" : "text-black-600"
+              }`}
+            >
+              skills
+            </span>
+          </div>
+        </div>
+        {/* <!-- about tabs end --> */}
       </div>
     </section>
   );
